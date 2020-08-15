@@ -1,0 +1,21 @@
+.level {
+  margin-top: 20px;
+  display: flex;
+  list-style-type: none;
+  color: #ffffff;
+  flex-wrap: wrap;
+  li {
+    padding: 10px;
+    background-color: #008966;
+    border: solid #007c5d 1px;
+    &:first-child {
+      border-radius: 6px 0 0 6px;
+    }
+    &:last-child {
+      border-radius: 0 6px 6px 0;
+    }
+  }
+  .active {
+    background-color: #00efb2;
+  }
+}
