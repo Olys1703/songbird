@@ -1,0 +1,24 @@
+.answer-board {
+  list-style-type: none;
+  li {
+    cursor: pointer;
+    padding: 0.85rem 1.25rem;
+    background-color: #303030;
+    border: 1px solid #555;
+  }
+}
+.led {
+  background-color: #666;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 15px;
+  border-radius: 50%;
+  transition: 0.1s;
+  &.true {
+    background-color: #00bc8c;
+  }
+  &.false {
+    background-color: #d62c1a;
+  }
+}

@@ -1,19 +1,18 @@
 .level {
   margin-top: 20px;
+  width: 100%;
   display: flex;
   list-style-type: none;
-  color: #ffffff;
   flex-wrap: wrap;
+  border-radius: 5px;
+  overflow: hidden;
+  justify-content: space-between;
   li {
+    flex: auto;
     padding: 10px;
     background-color: #008966;
     border: solid #007c5d 1px;
-    &:first-child {
-      border-radius: 6px 0 0 6px;
-    }
-    &:last-child {
-      border-radius: 0 6px 6px 0;
-    }
+    text-align: center;
   }
   .active {
     background-color: #00efb2;
