@@ -1,10 +1,15 @@
 .answer-board {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   li {
     cursor: pointer;
     padding: 0.85rem 1.25rem;
     background-color: #303030;
     border: 1px solid #555;
+    align-items: center;
+    display: flex;
   }
 }
 .led {
