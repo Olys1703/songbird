@@ -37,14 +37,10 @@ class App extends React.Component {
       score: this.state.score + addScore,
       answerIsCorrect: true,
     });
-
-    // console.log(this.state.soundRef);
     const play = document.querySelector('.rhap_play-pause-button');
     if (!this.state.soundRef.current.audio.current.paused) {
       play.click();
     }
-    // console.log(play, 1);
-    //this.state.soundRef.current.audio.current.click();
   };
   wrongAnswer = () => {
     new Audio(incorrectSound).play();
