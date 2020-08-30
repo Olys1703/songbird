@@ -1,0 +1,13 @@
+.rhap_container {
+  background-color: transparent;
+  box-shadow: none;
+  & * {
+    color: #ffffff;
+    &:focus {
+      outline: none;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+}
