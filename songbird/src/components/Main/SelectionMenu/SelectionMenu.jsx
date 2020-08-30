@@ -6,6 +6,7 @@ export const SelectionMenu = (props) => {
   const context = useContext(AppContext);
   const [answerState, setAnswerState] = useState([]);
   useEffect(() => {
+    console.log(context.bird.name);
     setAnswerState(
       props.birds.concat().map((item) => {
         item.state = 'default';
